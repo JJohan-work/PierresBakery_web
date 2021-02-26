@@ -1,12 +1,12 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using NumberOfWords.Models;
+using PierresBakery.Models;
 using System;
 
-namespace NumberOfWords.Tests
+namespace PierresBakery.Tests
 {
    [TestClass]
-   public class GameTests
+   public class BreadTests
   {
     // [TestMethod]
     // public void GameConstructor_CreatesInstanceOfGame_Game()
