@@ -11,7 +11,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GameConstructor_CreatesInstanceOfGame_Game()
     {
-      Bread newBread = new Bread(); 
+      Bread newBread = new Bread(2); 
       Assert.AreEqual(typeof(Bread), newBread.GetType());  
     }
 
