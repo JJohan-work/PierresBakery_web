@@ -8,12 +8,12 @@ namespace PierresBakery.Tests
    [TestClass]
    public class BreadTests
   {
-    // [TestMethod]
-    // public void GameConstructor_CreatesInstanceOfGame_Game()
-    // {
-    //   Game newGame = new Game();
-    //   Assert.AreEqual(typeof(Game), newGame.GetType());
-    // }
+    [TestMethod]
+    public void GameConstructor_CreatesInstanceOfGame_Game()
+    {
+      Bread newBread = new Bread(); 
+      Assert.AreEqual(typeof(Bread), newBread.GetType());  
+    }
 
     // [TestMethod]
     // public void SplitStringIntoChar_CreatesCharArray_char(){
