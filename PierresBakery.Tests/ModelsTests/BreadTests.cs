@@ -9,10 +9,18 @@ namespace PierresBakery.Tests
    public class BreadTests
   {
     [TestMethod]
-    public void GameConstructor_CreatesInstanceOfGame_Game()
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
       Bread newBread = new Bread(2); 
       Assert.AreEqual(typeof(Bread), newBread.GetType());  
+    }
+
+    [TestMethod]
+    public void GetQuantity_ReturnsQuantity_Int()
+    {
+      int qty = 2;
+      Bread newBread = new Bread(qty); 
+      Assert.AreEqual(qty, newBread.Quantity);  
     }
 
     // [TestMethod]
