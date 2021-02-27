@@ -27,7 +27,7 @@ namespace PierresBakery.Tests
     public void GetFinalQuantity_CalculatedTotalQty_Int(){
       int orderedQty = 10;
       Bread newBread = new Bread(orderedQty);
-      int totalQty = newBread.FinalQuantity;
+      int totalQty = newBread.FindTotalQuantity();
       Assert.AreEqual(15, totalQty);
     }
 
@@ -35,16 +35,10 @@ namespace PierresBakery.Tests
     public void GetOrderCost_CalculatedOrderCost_Int(){
       int orderedQty = 10;
       Bread newBread = new Bread(orderedQty);
-      int orderCost = newBread.OrderCost;
+      int orderCost = newBread.FindTotalCost();
       Assert.AreEqual(20, orderCost);
     }
-    // [TestMethod]
-    // public void GetScrabbleValuePerChar_ReturnCharValue_int() {
-    //   Game newGame = new Game();
-    //   int letter = newGame.ReturnCharValue('A');
-    //   Console.WriteLine(letter);
-    //   Assert.AreEqual(letter, 3);
-    // }
+    
   }
 
 
