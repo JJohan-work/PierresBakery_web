@@ -13,6 +13,12 @@ namespace PierresBakery.Models
       OrderedQuantity = qty;
     }
 
+    public static long UnixTimeNow()
+    {
+      var timeSpan = (DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0));
+      return (long)timeSpan.TotalSeconds;
+    }
+
     public override int FindTotalCost() {
       int multipleOfThree = (int) OrderedQuantity/3;
       OrderCost = (multipleOfThree*PastryCostForThree) + ((OrderedQuantity%3)*PastryUnitCost);

@@ -23,10 +23,6 @@ namespace PierresBakery
       bool parseSuccessBread = int.TryParse(Console.ReadLine(), out breadCount);
       Console.WriteLine("Enter Pastry Qty: ");
       bool parseSuccessPastry = int.TryParse(Console.ReadLine(), out pastryCount);
-
-      // Console.WriteLine($"Bread Qty entered is {breadCount} and parseSuccessBread is {parseSuccessBread}");
-      // Console.WriteLine($"Pastry Qty entered is {pastryCount} and parseSuccessPastry is {parseSuccessPastry}");
-
       while((!parseSuccessBread) || (breadCount < 0) || (!parseSuccessPastry) || (pastryCount < 0) ) //entered value is int and is 0 or greater
       {
         Console.WriteLine("INVALID. Enter a valid Quantity else enter Q to Exit or hit ENTER to restart");
@@ -41,9 +37,8 @@ namespace PierresBakery
       Bread bread = new Bread(breadCount);
       Pastry pastry = new Pastry(pastryCount);
       Console.WriteLine($"{"\n"}THANK YOU for your order!!!! See receipt below ....{"\n"}{"\n"}");
-
       Console.WriteLine("###################### Pierre's Bakery #######################");
-      Console.WriteLine($"Invoice # {Bread.UnixTimeNow()}");
+      Console.WriteLine($"Invoice # {Pastry.UnixTimeNow()}");
       Console.WriteLine($"Date: {DateTime.Now.ToString("M/d/yyyy")}");
       Console.WriteLine($"Time: {DateTime.Now.ToString("h:mm:ss tt")}{"\n"}");
       Console.WriteLine("==============================================================");
@@ -52,7 +47,7 @@ namespace PierresBakery
       Console.WriteLine($"Pastry{"\t"}{pastryCount}{"\t"}Buy 1 for $2 or 3 for $5{"\t"}${pastry.BreadUnitCost}{"\t"}${pastry.FindTotalCost()}");
       Console.WriteLine("==============================================================");
       Console.WriteLine($"TOTAL{"\t"}{"\t"}{"\t"}{"\t"}{"\t"}{"\t"}{"\t"}${bread.FindTotalCost() + pastry.FindTotalCost()}");
-      
+
       System.Environment.Exit(1);
     }
   }
