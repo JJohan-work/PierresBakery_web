@@ -7,7 +7,7 @@ namespace PierresBakery.Tests
 {
    [TestClass]
    public class BreadTests
-  {
+   {
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
@@ -38,8 +38,5 @@ namespace PierresBakery.Tests
       int orderCost = newBread.FindTotalCost();
       Assert.AreEqual(50, orderCost);
     }
-    
   }
-
-
 }

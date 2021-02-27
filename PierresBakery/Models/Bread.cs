@@ -11,7 +11,6 @@ namespace PierresBakery.Models
     public int FinalQuantity { get; set; }
     public int OrderCost { get; set; }
 
-
     public Bread(int qty ) {
       OrderedQuantity = qty;
     }
@@ -25,9 +24,5 @@ namespace PierresBakery.Models
       OrderCost = (OrderedQuantity*BreadUnitCost);
       return OrderCost;
     }
-
-
   }
-
 }
-

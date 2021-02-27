@@ -18,12 +18,13 @@ namespace PierresBakery
       Console.WriteLine("# 1. Bread   : Buy 2, get 1 free. A single loaf costs $5     #");
       Console.WriteLine("# 2. Pastry  : Buy 1 for $2 or 3 for $5                      #");
       Console.WriteLine("##############################################################");
-      
+
       Console.WriteLine("Enter Bread Qty: ");
       bool parseSuccessBread = int.TryParse(Console.ReadLine(), out breadCount);
       Console.WriteLine("Enter Pastry Qty: ");
       bool parseSuccessPastry = int.TryParse(Console.ReadLine(), out pastryCount);
-      while((!parseSuccessBread) || (breadCount < 0) || (!parseSuccessPastry) || (pastryCount < 0) ) //entered value is int and is 0 or greater
+
+      while((!parseSuccessBread) || (breadCount < 0) || (!parseSuccessPastry) || (pastryCount < 0) ) //ensure qty entered is int and is 0 or greater
       {
         Console.WriteLine("INVALID. Enter a valid Quantity else enter Q to Exit or hit ENTER to restart");
         if (Console.ReadLine() == "Q") {

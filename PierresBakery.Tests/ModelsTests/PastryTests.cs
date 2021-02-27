@@ -7,7 +7,7 @@ namespace PierresBakery.Tests
 {
    [TestClass]
    public class PastryTests
-  {
+   {
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
@@ -31,6 +31,4 @@ namespace PierresBakery.Tests
       Assert.AreEqual(20, orderCost);
     }
   }
-
-
 }
