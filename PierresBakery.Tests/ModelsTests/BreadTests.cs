@@ -36,7 +36,7 @@ namespace PierresBakery.Tests
       int orderedQty = 10;
       Bread newBread = new Bread(orderedQty);
       int orderCost = newBread.FindTotalCost();
-      Assert.AreEqual(20, orderCost);
+      Assert.AreEqual(50, orderCost);
     }
     
   }

@@ -24,19 +24,11 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void GetFinalQuantity_CalculatedPastryQuantity_Int(){
-      int orderedQty = 14;
-      Pastry newPastry = new Pastry(orderedQty);
-      int totalQty = newPastry.FindTotalQuantity();
-      Assert.AreEqual(21, totalQty);
-    }
-
-    [TestMethod]
     public void GetOrderCost_CalculatedOrderCost_Int(){
-      int orderedQty = 10;
+      int orderedQty = 12;
       Pastry newPastry = new Pastry(orderedQty);
       int orderCost = newPastry.FindTotalCost();
-      Assert.AreEqual(50, orderCost);
+      Assert.AreEqual(20, orderCost);
     }
   }
 
