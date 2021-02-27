@@ -16,25 +16,20 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void GetQuantity_ReturnsQuantity_Int()
+    public void GetOrderedQuantity_ReturnsQuantity_Int()
     {
-      int qty = 2;
-      Bread newBread = new Bread(qty); 
-      Assert.AreEqual(qty, newBread.Quantity);  
+      int orderedQty = 2;
+      Bread newBread = new Bread(orderedQty);
+      Assert.AreEqual(orderedQty, newBread.OrderedQuantity);
     }
 
-    // [TestMethod]
-    // public void SplitStringIntoChar_CreatesCharArray_char(){
-    //   Game newGame = new Game();
-    //   string tempString = "olga";
-    //   char[] charArray = tempString.ToCharArray();
-    //   Console.WriteLine("-----------------------------------");
-    //   Console.WriteLine(charArray.ToString());
-    //   Console.WriteLine("-----------------------------------");
-    //   char[] charReturn = newGame.SplitStringIntoChar("olga");
-    //    Console.WriteLine(charReturn.ToString());
-    //   Assert.AreEqual(charArray, charReturn);
-    // }
+    [TestMethod]
+    public void GetFinalQuantity_CalculatedTotalQty_Int(){
+      int orderedQty = 10;
+      Bread newBread = new Bread(orderedQty);
+      int totalQty = newBread.FinalQuantity;
+      Assert.AreEqual(15, totalQty);
+    }
 
     // [TestMethod]
     // public void GetScrabbleValuePerChar_ReturnCharValue_int() {
