@@ -31,6 +31,13 @@ namespace PierresBakery.Tests
       Assert.AreEqual(15, totalQty);
     }
 
+    [TestMethod]
+    public void GetOrderCost_CalculatedOrderCost_Int(){
+      int orderedQty = 10;
+      Bread newBread = new Bread(orderedQty);
+      int orderCost = newBread.OrderCost;
+      Assert.AreEqual(20, orderCost);
+    }
     // [TestMethod]
     // public void GetScrabbleValuePerChar_ReturnCharValue_int() {
     //   Game newGame = new Game();
