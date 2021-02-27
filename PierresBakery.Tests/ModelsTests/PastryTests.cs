@@ -15,29 +15,29 @@ namespace PierresBakery.Tests
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());  
     }
 
-    // [TestMethod]
-    // public void GetOrderedQuantity_ReturnsQuantity_Int()
-    // {
-    //   int orderedQty = 2;
-    //   Bread newBread = new Bread(orderedQty);
-    //   Assert.AreEqual(orderedQty, newBread.OrderedQuantity);
-    // }
+    [TestMethod]
+    public void GetOrderedQuantity_OrderedPastryQuantity_Int()
+    {
+      int orderedQty = 10;
+      Pastry newPastry = new Pastry(orderedQty);
+      Assert.AreEqual(orderedQty, newPastry.OrderedQuantity);
+    }
 
-    // [TestMethod]
-    // public void GetFinalQuantity_CalculatedTotalQty_Int(){
-    //   int orderedQty = 10;
-    //   Bread newBread = new Bread(orderedQty);
-    //   int totalQty = newBread.FindTotalQuantity();
-    //   Assert.AreEqual(15, totalQty);
-    // }
+    [TestMethod]
+    public void GetFinalQuantity_CalculatedPastryQuantity_Int(){
+      int orderedQty = 14;
+      Pastry newPastry = new Pastry(orderedQty);
+      int totalQty = newPastry.FindTotalQuantity();
+      Assert.AreEqual(21, totalQty);
+    }
 
-    // [TestMethod]
-    // public void GetOrderCost_CalculatedOrderCost_Int(){
-    //   int orderedQty = 10;
-    //   Bread newBread = new Bread(orderedQty);
-    //   int orderCost = newBread.FindTotalCost();
-    //   Assert.AreEqual(20, orderCost);
-    // }
+    [TestMethod]
+    public void GetOrderCost_CalculatedOrderCost_Int(){
+      int orderedQty = 10;
+      Pastry newPastry = new Pastry(orderedQty);
+      int orderCost = newPastry.FindTotalCost();
+      Assert.AreEqual(50, orderCost);
+    }
   }
 
 

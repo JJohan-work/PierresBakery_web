@@ -16,7 +16,7 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void GetOrderedQuantity_ReturnsQuantity_Int()
+    public void GetOrderedQuantity_OrderedBreadQuantity_Int()
     {
       int orderedQty = 2;
       Bread newBread = new Bread(orderedQty);
@@ -24,15 +24,15 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void GetFinalQuantity_CalculatedTotalQty_Int(){
-      int orderedQty = 10;
+    public void GetFinalQuantity_CalculatedBreadQuantity_Int(){
+      int orderedQty = 14;
       Bread newBread = new Bread(orderedQty);
       int totalQty = newBread.FindTotalQuantity();
-      Assert.AreEqual(15, totalQty);
+      Assert.AreEqual(21, totalQty);
     }
 
     [TestMethod]
-    public void GetOrderCost_CalculatedOrderCost_Int(){
+    public void GetOrderCost_CalculatedBreadOrderCost_Int(){
       int orderedQty = 10;
       Bread newBread = new Bread(orderedQty);
       int orderCost = newBread.FindTotalCost();
