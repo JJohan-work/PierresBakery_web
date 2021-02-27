@@ -13,12 +13,12 @@ namespace PierresBakery
     {
       int breadCount;
       int pastryCount;
-      Console.WriteLine("############## Welcome to Pierre's Bakery ################");
-      Console.WriteLine("#                          Menu                          #");
-      Console.WriteLine("# 1. Bread   : Buy 2, get 1 free. A single loaf costs $5 #");
-      Console.WriteLine("# 2. Pastry  : Buy 1 for $2 or 3 for $5                  #");
-      Console.WriteLine("##########################################################");
-
+      Console.WriteLine("################# Welcome to Pierre's Bakery #################");
+      Console.WriteLine("#                           Menu                             #");
+      Console.WriteLine("# 1. Bread   : Buy 2, get 1 free. A single loaf costs $5     #");
+      Console.WriteLine("# 2. Pastry  : Buy 1 for $2 or 3 for $5                      #");
+      Console.WriteLine("##############################################################");
+      
       Console.WriteLine("Enter Bread Qty: ");
       bool parseSuccessBread = int.TryParse(Console.ReadLine(), out breadCount);
       Console.WriteLine("Enter Pastry Qty: ");
@@ -40,24 +40,19 @@ namespace PierresBakery
 
       Bread bread = new Bread(breadCount);
       Pastry pastry = new Pastry(pastryCount);
-      Console.WriteLine("##################### Pierre's Bakery #####################");
+      Console.WriteLine($"{"\n"}THANK YOU for your order!!!! See receipt below ....{"\n"}{"\n"}");
+
+      Console.WriteLine("###################### Pierre's Bakery #######################");
       Console.WriteLine($"Invoice # {Bread.UnixTimeNow()}");
       Console.WriteLine($"Date: {DateTime.Now.ToString("M/d/yyyy")}");
-      Console.WriteLine($"Date: {DateTime.Now.ToString("h:mm:ss tt")}");
+      Console.WriteLine($"Time: {DateTime.Now.ToString("h:mm:ss tt")}{"\n"}");
       Console.WriteLine("==============================================================");
       Console.WriteLine($"ITEM{"\t"}QTY{"\t"}DESC{"\t"}{"\t"}{"\t"}{"\t"}RATE{"\t"}AMOUNT");
-      Console.Write($"Bread{"\t"}");
-      Console.Write($"{breadCount}{"\t"}");
-      Console.Write($"Total Qty is {bread.FindTotalQuantity()}{"\t"}{"\t"}{"\t"}");
-      Console.Write($"${bread.BreadUnitCost}{"\t"}");
-      Console.WriteLine($"${bread.FindTotalCost()}");
+      Console.WriteLine($"Bread{"\t"}{breadCount}{"\t"}Total Qty is {bread.FindTotalQuantity()}{"\t"}{"\t"}{"\t"}${bread.BreadUnitCost}{"\t"}${bread.FindTotalCost()}");
+      Console.WriteLine($"Pastry{"\t"}{pastryCount}{"\t"}Buy 1 for $2 or 3 for $5{"\t"}${pastry.BreadUnitCost}{"\t"}${pastry.FindTotalCost()}");
+      Console.WriteLine("==============================================================");
+      Console.WriteLine($"TOTAL{"\t"}{"\t"}{"\t"}{"\t"}{"\t"}{"\t"}{"\t"}${bread.FindTotalCost() + pastry.FindTotalCost()}");
       
-      Console.Write($"Pastry{"\t"}");
-      Console.Write($"{pastryCount}{"\t"}");
-      Console.Write($"Buy 1 for $2 or 3 for $5{"\t"}");
-      Console.Write($"${pastry.BreadUnitCost}{"\t"}");
-      Console.WriteLine($"${pastry.FindTotalCost()}");
-
       System.Environment.Exit(1);
     }
   }
