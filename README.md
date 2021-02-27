@@ -20,7 +20,7 @@
 
 -  See below image which indicates output of Console Application
 
-![Image of Console when order is placed](.assets/images/PrintScreenShot_CompletedOrder.png)
+![Image of Console when order is placed](./assets/images/PrintScreenShot_CompletedOrder.png)
 
 | **Spec** |
 
