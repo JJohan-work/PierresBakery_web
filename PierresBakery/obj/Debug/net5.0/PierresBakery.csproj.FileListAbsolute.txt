@@ -1,0 +1,16 @@
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\obj\Debug\net5.0\PierresBakery.csprojAssemblyReference.cache
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\obj\Debug\net5.0\PierresBakery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\obj\Debug\net5.0\PierresBakery.AssemblyInfoInputs.cache
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\obj\Debug\net5.0\PierresBakery.AssemblyInfo.cs
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\obj\Debug\net5.0\PierresBakery.csproj.CoreCompileInputs.cache
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\bin\Debug\net5.0\PierresBakery.deps.json
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\bin\Debug\net5.0\PierresBakery.dll
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\bin\Debug\net5.0\ref\PierresBakery.dll
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\bin\Debug\net5.0\PierresBakery.pdb
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\obj\Debug\net5.0\PierresBakery.dll
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\obj\Debug\net5.0\ref\PierresBakery.dll
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\obj\Debug\net5.0\PierresBakery.pdb
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\bin\Debug\net5.0\PierresBakery.exe
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\bin\Debug\net5.0\PierresBakery.runtimeconfig.json
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\bin\Debug\net5.0\PierresBakery.runtimeconfig.dev.json
+C:\Users\SVAYALK\Desktop\new_salim\epicodus\epicodus2021\c#\PierresBakery.Solution\PierresBakery\obj\Debug\net5.0\PierresBakery.genruntimeconfig.cache
