@@ -26,7 +26,9 @@
 
 #### Running Tests:
 
--  To set up MS tests, from command line navigate to `PierresBakery.Tests`  directory and then run  `dotnet restore` (**'obj'**  and  **'bin'** directories would get created in both `PierresBakery.Tests`  and  `PierresBakery`  directories)
+-  To install packages listed in `.csproj` file, from command line navigate to `PierresBakery.Tests`  directory and then run  `dotnet restore` (**'obj'** directory would get created in both `PierresBakery.Tests`  and  `PierresBakery`  directories)
+
+-  To create internal content for build, from command line navigate to `PierresBakery.Tests`  directory and then run  `dotnet build` (**'bin'** directory would get created in both `PierresBakery.Tests`  and  `PierresBakery`  directories)
 
 -  To run MS tests, from command line navigate to `PierresBakery.Tests` directory and run `dotnet test`
 
