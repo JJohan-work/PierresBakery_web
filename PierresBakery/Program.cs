@@ -1,9 +1,9 @@
-using System;
-using System.Collections.Generic;
-using PierresBakery.Models;
-using System.Text.RegularExpressions;
-using System.Linq;
-using System.Threading;
+using PierresBakery.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System;
 
 namespace PierresBakery
 {
@@ -29,10 +29,12 @@ namespace PierresBakery
         while((!parseSuccessBread) || (breadCount < 0) || (!parseSuccessPastry) || (pastryCount < 0) ) //ensure qty entered is int and is 0 or greater
         {
           Console.WriteLine("INVALID. Enter a valid Quantity else enter Q to Exit or hit ENTER to restart");
-          if (Console.ReadLine() == "Q") {
+          if (Console.ReadLine() == "Q")
+          {
             System.Environment.Exit(1);
           }
-          else {
+          else
+          {
             Main();
           }
         }
