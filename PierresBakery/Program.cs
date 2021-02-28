@@ -26,7 +26,7 @@ namespace PierresBakery
         Console.WriteLine("Enter Pastry Qty: ");
         bool parseSuccessPastry = int.TryParse(Console.ReadLine(), out pastryCount);
 
-        while((!parseSuccessBread) || (breadCount < 0) || (!parseSuccessPastry) || (pastryCount < 0)  || (breadCount >999) || (pastryCount > 999)) //ensure qty entered is int and is 0 or greater & less than 99
+        while((!parseSuccessBread) || (breadCount < 0) || (!parseSuccessPastry) || (pastryCount < 0)  || (breadCount >99) || (pastryCount > 99)) //ensure qty entered is int and is 0 or greater & less than 99
         {
           Console.WriteLine("INVALID. Enter a valid Quantity else enter Q to Exit or hit ENTER to restart");
           if (Console.ReadLine() == "Q")
