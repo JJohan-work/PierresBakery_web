@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receipt</title>
+</head>
+<body>
+  <h1>Pierre's Bakery</h1>
+  <p>Invoice # @Model.InvoiceNumber</p>
+  <p>Date: </p>
+  <p>Time: </p>
+  <p>======================================================</p>
+  <p>ITEM &emsp;QTY &emsp;DESC &emsp;&emsp;RATE &emsp;AMOUNT</p>
+  <p>Bread&emsp;@Model.BreadCount &emsp;Total Qty is @Model.CalculatedBreadCount &emsp;$5 &emsp;$@Model.BreadCost</p>
+  <p>Pastry&emsp;@Model.PastryCount &emsp;Total Qty is @Model.CalculatedPastryCount &emsp;$5 &emsp;$@Model.PastryCost</p>
+  <p>ITEM &emsp;QTY &emsp;DESC &emsp;&emsp;RATE &emsp;AMOUNT</p>
+  <p>Bread &emsp;@Model.BreadCount &emsp;</p>
+  <p>Pastry &emsp;@Model.PastryCount &emsp;</p>
+  
+  <p>======================================================</p>
+</body>
+</html>
