@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using PierresBakery.Models;
 using System.Globalization;
 
 namespace PierresBakery.Controllers {
@@ -9,14 +8,36 @@ namespace PierresBakery.Controllers {
     public ActionResult Home () {
       return View();
     }
+    [Route("/addBread")]
+    public ActionResult Home ()
+    {
+      return View();
+    }
+
+    [Route("/orderPastry")]
+    public ActionResult Pastry()
+    {
+      return View();
+    }
+
+    [Route("/orderBread")]
+    public ActionResult Bread()
+    {
+      return View();
+    }
 
     [Route("/receipt")]
-    public ActionResult Receipt (int breadCount, int pastryCount) {
-      Quantity quantity = new Quantity();
-      quantity.InvoiceNumber = new DateTime();
-      quantity.BreadCount = breadCount;
-      quantity.PastryCount = pastryCount;
-      return View(quantity);
+    public ActionResult Receipt () {
+      // Quantity quantity = new Quantity();
+      // quantity.InvoiceNumber = new DateTime();
+      // quantity.BreadCount = breadCount;
+      // quantity.PastryCount = pastryCount;
+      return View();
     }   
+    [Route("/Checkout")]
+    public string Checkout ()
+    {
+      return "Checkout is confirmed";
+    }
   }
 }

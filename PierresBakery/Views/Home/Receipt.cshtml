@@ -7,7 +7,17 @@
   <title>Receipt</title>
 </head>
 <body>
-  <h1>Pierre's Bakery</h1>
+  Receipt
+
+<form action="/" method="post">
+  <button type="submit">Cancel</button>
+</form>
+
+<form action="/Checkout" method="post">
+  <button>Confirm Purchase</button>
+</form>
+
+  @* <h1>Pierre's Bakery</h1>
   <p>Invoice # @Model.InvoiceNumber</p>
   <p>Date: </p>
   <p>Time: </p>
@@ -19,6 +29,6 @@
   <p>Bread &emsp;@Model.BreadCount &emsp;</p>
   <p>Pastry &emsp;@Model.PastryCount &emsp;</p>
   
-  <p>======================================================</p>
+  <p>======================================================</p> *@
 </body>
 </html>
